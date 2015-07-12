@@ -39,6 +39,7 @@ key in the dictionary.
 ###Pre-requisites:
 
 	1) Unicodecsv (Just more versatile than csv I guess)
+	2) pymongo
 
 ###To run mongoexportcsv : 
 
