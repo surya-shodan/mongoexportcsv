@@ -21,17 +21,20 @@ The output csv will be:
 
 		||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name
 	Doc A   Jochen		      , Rindt                ,
-	Doc B                         ,                      , Ayrton Senna
+	Doc B                     ,                      , Ayrton Senna
 
 As we can see, the headers contain all possible variable names with 
-their hierarchy.
+their hierarchy. If the document does not contain that variable with the
+exact hierarchy, it is left empty.
 The string sequence '||' is used to signify the hierarchy of the
 key in the dictionary.
 
 Pre-requisites:
+
 	Unicodecsv : It's just more versatile to use in place of csv.
 
-To run mongoexport csv : 
+To run mongoexportcsv : 
+
 	1) Clone the git repository
 	2) python mongoexportcsv.py <db_name> <collection_name> <path_to_output_file_name>
 
