@@ -1,7 +1,7 @@
 ##Mongoexportcsv is a tool to convert MongoDB documents to csv.
 
 ###It works irrespective of structural differences between individual 
-###documents. 
+documents. 
 
 eg: 
 
