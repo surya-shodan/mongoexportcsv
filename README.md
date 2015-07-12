@@ -5,22 +5,27 @@
 eg: 
 
     If Document A is
+    {
+    	'_id': ObjectId('abcd'),
 	'emp_name': {
 		'first_name': 'Jochen',
 		'last_name' : 'Rindt'
 	}
 	
     And Document B is
-    'emp_name': {
+    {	
+    	'_id': ObjectId('abcd'),
+    	'emp_name': {
 		'Full_name': 'Ayrton Senna'
 	}
+    }
 
 
 The output csv will be:
 
-		||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name
-	Doc A	Jochen		      , Rindt                ,  
-	Doc B   	              ,                      ,  Ayrton Senna
+		||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name, '_id
+	Doc A	Jochen		      , Rindt                ,                      ,  ObjectId('abcd')
+	Doc B   	              ,                      ,  Ayrton Senna        ,  ObjectId('abcd')
 
 As we can see, the headers contain all possible variable names with 
 their hierarchy. If the document does not contain that variable with the
