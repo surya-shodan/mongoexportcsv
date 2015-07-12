@@ -41,7 +41,7 @@ To run mongoexportcsv :
 Notes:
 
 As you can see, this is clearly barebones and I've just finished coding it.
-I'll adding features like using baseCommands to specify command-line args
+I'll be adding features like using baseCommands to specify command-line args
 and so on.
 Hope you guys find this useful.
 
