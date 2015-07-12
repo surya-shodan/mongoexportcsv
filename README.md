@@ -29,11 +29,11 @@ The string sequence '||' is used to signify the hierarchy of the
 key in the dictionary.
 
 Pre-requisites:
-Unicodecsv : It's just more versatile to use in place of csv.
+	Unicodecsv : It's just more versatile to use in place of csv.
 
 To run mongoexport csv : 
-1) Clone the git repository
-2) python mongoexportcsv.py <db_name> <collection_name> <path_to_output_file_name>
+	1) Clone the git repository
+	2) python mongoexportcsv.py <db_name> <collection_name> <path_to_output_file_name>
 
 Notes:
 
