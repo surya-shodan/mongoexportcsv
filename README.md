@@ -3,7 +3,9 @@ Mongoexportcsv is a tool to convert MongoDB documents to csv.
 It works irrespective of structural differences between individual 
 documents. 
 
-eg: If Document A is
+eg: 
+
+    If Document A is
 	'emp_name': {
 		'first_name': 'Jochen',
 		'last_name' : 'Rindt'
@@ -17,9 +19,9 @@ eg: If Document A is
 
 The output csv will be:
 
-	||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name
-Doc A   Jochen		      , Rindt                ,
-Doc B                         ,                      , Ayrton Senna
+		||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name
+	Doc A   Jochen		      , Rindt                ,
+	Doc B                         ,                      , Ayrton Senna
 
 As we can see, the headers contain all possible variable names with 
 their hierarchy.
