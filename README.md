@@ -1,4 +1,4 @@
-Mongoexportcsv is a tool to convert MongoDB documents to csv.
+##Mongoexportcsv is a tool to convert MongoDB documents to csv.
 
 It works irrespective of structural differences between individual 
 documents. 
@@ -12,16 +12,16 @@ eg:
 	}
 	
     And Document B is
-    	'emp_name': {
+    'emp_name': {
 		'Full_name': 'Ayrton Senna'
 	}
 
 
 The output csv will be:
 
-		||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name
-	Doc A   Jochen		      , Rindt                ,
-	Doc B                     ,                      , Ayrton Senna
+			||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name
+	Doc A	   Jochen		    , Rindt                ,
+	Doc B   	                  ,                      , Ayrton Senna
 
 As we can see, the headers contain all possible variable names with 
 their hierarchy. If the document does not contain that variable with the
@@ -44,4 +44,3 @@ As you can see, this is clearly barebones and I've just finished coding it.
 I'll be adding features like using baseCommands to specify command-line args
 and so on.
 Hope you guys find this useful.
-
