@@ -1,7 +1,7 @@
 ##Mongoexportcsv is a tool to convert MongoDB documents to csv.
 
-It works irrespective of structural differences between individual 
-documents. 
+###It works irrespective of structural differences between individual 
+###documents. 
 
 eg: 
 
@@ -19,9 +19,9 @@ eg:
 
 The output csv will be:
 
-			||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name
-	Doc A	   Jochen		    , Rindt                ,
-	Doc B   	                  ,                      , Ayrton Senna
+		||emp_name||first_name, ||emp_name||last_name, ||emp_name||Full_name
+	Doc A	Jochen		      , Rindt                ,  
+	Doc B   	              ,                      ,  Ayrton Senna
 
 As we can see, the headers contain all possible variable names with 
 their hierarchy. If the document does not contain that variable with the
@@ -29,16 +29,16 @@ exact hierarchy, it is left empty.
 The string sequence '||' is used to signify the hierarchy of the
 key in the dictionary.
 
-Pre-requisites:
+###Pre-requisites:
 
-	Unicodecsv : It's just more versatile to use in place of csv.
+	1) Unicodecsv (Just more versatile than csv I guess)
 
-To run mongoexportcsv : 
+###To run mongoexportcsv : 
 
 	1) Clone the git repository
 	2) python mongoexportcsv.py <db_name> <collection_name> <path_to_output_file_name>
 
-Notes:
+###Notes:
 
 As you can see, this is clearly barebones and I've just finished coding it.
 I'll be adding features like using baseCommands to specify command-line args
