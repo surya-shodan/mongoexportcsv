@@ -1,2 +1,4 @@
 #Stuff for vim
 *.swp
+#Rope project for vim
+.ropeproject/
