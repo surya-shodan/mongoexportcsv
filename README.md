@@ -44,9 +44,11 @@ key in the dictionary.
 ###To run mongoexportcsv : 
 
 	1) Clone the git repository
-	2) python mongoexportcsv.py <db_name> <collection_name> <path_to_output_file_name>
+	2) python mongoexportcsv.py <db_name_or_mongodb_uri> <collection_name> <path_to_output_file_name>
 
 ###Notes:
+
+The first of the arguments can the name of your database or a complete mongoDb URI: `mongodb://username:password@host:port/databaseName`
 
 As you can see, this is clearly barebones and I've just finished coding it.
 I'll be adding features like using baseCommands to specify command-line args

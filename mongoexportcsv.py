@@ -17,8 +17,13 @@ class generic_converter:
                 self.header_dict[name_var + '||' + element] = test_dict[element]
 
     def converter_main(self, csv_writer):
-        client = MongoClient()
-        db = client[sys.argv[1]]
+        mongo_uri_or_db_name = sys.argv[1]
+        if mongo_uri_or_db_name.startswith("mongodb://"): # mongodb uri given
+            client = MongoClient(mongo_uri_or_db_name)
+            db = client[mongo_uri_or_db_name.split("/")[-1]]
+        else: # database name given
+            client = MongoClient()
+            db = client[mongo_uri_or_db_name]
         collection_obj = db[sys.argv[2]]
         cursor_records = collection_obj.find()
         header_list = []
