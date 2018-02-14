@@ -1,6 +1,6 @@
-##Mongoexportcsv is a tool to convert MongoDB documents to csv.
+## Mongoexportcsv is a tool to convert MongoDB documents to csv.
 
-###It works irrespective of structural differences between individual documents. 
+### It works irrespective of structural differences between individual documents. 
 
 eg: 
 
@@ -36,17 +36,17 @@ exact hierarchy, it is left empty.
 The string sequence '||' is used to signify the hierarchy of the
 key in the dictionary.
 
-###Pre-requisites:
+### Pre-requisites:
 
 	1) Unicodecsv (Just more versatile than csv I guess)
 	2) pymongo
 
-###To run mongoexportcsv : 
+### To run mongoexportcsv : 
 
 	1) Clone the git repository
 	2) python mongoexportcsv.py <db_name_or_mongodb_uri> <collection_name> <path_to_output_file_name>
 
-###Notes:
+### Notes:
 
 The first of the arguments can the name of your database or a complete mongoDb URI: `mongodb://username:password@host:port/databaseName`
 
