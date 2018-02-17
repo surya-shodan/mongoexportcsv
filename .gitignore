@@ -2,3 +2,5 @@
 *.swp
 #Rope project for vim
 .ropeproject/
+# Output files in csv
+output/*

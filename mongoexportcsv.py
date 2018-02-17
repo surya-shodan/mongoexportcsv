@@ -50,7 +50,8 @@ class generic_converter:
 
 
 def main():
-    f_write = open(sys.argv[3], 'wb')
+    output_file = './output/%s'%(sys.argv[3])
+    f_write = open(output_file, 'wb')
     csv_writer = unicodecsv.writer(f_write, delimiter=',', quotechar='"')
     converter_object = generic_converter()
     converter_object.converter_main(csv_writer)
