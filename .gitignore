@@ -3,4 +3,4 @@
 #Rope project for vim
 .ropeproject/
 # Output files in csv
-output/*
+output/*.csv
